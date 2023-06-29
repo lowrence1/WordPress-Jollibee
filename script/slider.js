@@ -1,5 +1,5 @@
-const arr = ["bestseller", "chickenjoy", "burger", "breakfast"];
-
+// const arr = ["bestseller", "chickenjoy", "burger", "breakfast"];
+const arr = ["bestseller", "chickenjoy", "yumburger", "breakfast" ];
 for (var i = 0; i < arr.length; i++) {
   tns({
     container: `#${arr[i]}`,

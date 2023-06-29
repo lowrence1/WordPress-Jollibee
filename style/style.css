@@ -1095,9 +1095,22 @@ background-position: center -100px;
   right:-300px;
   background-color: #fff;
   box-shadow: -5px 10px 5px 2px rgba(0,0,0,0.04);
-  transition: .5s ease in-out
+  transition: .5s ease in-out;
+  display:flex;
+  justify-content: space-between;
+  flex-direction:column;
+}
+.cart ul li:last-child{
+  display:flex;
+  justify-content:space-between;
+  border-top:1px solid #e6e6e6;
+  padding-top:20px;
 }
 
+.cart ul {
+  display:flex;
+  justify-content:space-between;
+}
 .cart__close{
   position:absolute;
   top:40px;
@@ -1181,3 +1194,55 @@ font-size:
   align-items: center;
   
 }
+.page__hero{
+padding clamp: (20px, 6vx, 40px) 0;
+text-align: center;
+background-color:red;
+color:#fff;
+border-top: 4px solid #f09400;  
+}
+.page__hero h1{
+  font-size: clamp(30px, 6vw, 45px)
+}
+.full__with{
+  padding: clamp(30px, 6vw, 45px)
+}
+ .full__with p{
+  font-size:(20px, 6vx, 40px) 0;
+ }
+
+ .two__grid{
+  padding:(20px, 6vx, 40px) 0;
+  
+ }
+
+ .two__cols__grid{
+display:flex;
+grid-template-column: 1fr 1fr;
+grid-gap: 20px;
+padding: clamp(30px, 6vw, 45px)
+ }
+ .two__cols__grid >div{
+  flex-basis:50%;
+ }
+ .two__cols__grid img{
+width:100%;
+height:40%
+object-fit:cover;
+}
+
+.two__cols__grid h3{
+  color:red;
+  font-size: clamp(18px, 6vw, 30px);
+  text-align:center;
+  margin-bottom:20px;
+}
+.two__cols__grid p{
+  font-size: 18px;
+}
+
+.two__cols.row__reverse .two__cols__grid{
+  flex-direction:row-reverse;
+}
+
+
